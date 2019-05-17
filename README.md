@@ -1,4 +1,4 @@
-# webpack4-demo
+# webpack4-demo (test)
 A demo project for Webpack 4
 
 clone the repository
