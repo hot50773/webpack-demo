@@ -1,10 +1,10 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+// const HtmlWebpackPlugin = require('html-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin') // optimize css
 const TerserPlugin = require('terser-webpack-plugin') // uglify
 
-// TODO: url-loader, cssnano
+// TODO: url-loader, cssnano test
 module.exports = {
   // 專案的載入點，執行時將會從index.js 開始執行
   entry: {
@@ -12,7 +12,7 @@ module.exports = {
   },
   // 專案打包後的輸出點，包含輸出檔案的檔案名稱與檔案路徑
   output: {
-    filename: '[name].js',
+    filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist')
   },
   // 設定 babel-loader
@@ -62,10 +62,9 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css'
-    }),
-    new HtmlWebpackPlugin({ template: 'index.html' })
+      filename: 'css/[name].css',
+      chunkFilename: 'css/[id].css'
+    })
   ],
   optimization: {
     splitChunks: {
@@ -83,7 +82,7 @@ module.exports = {
           safe: true,
           // cssnano 集成了autoprefixer的功能
           // 会使用到autoprefixer进行无关前缀的清理
-          // 关闭autoprefixer功能
+          // 关闭autoprefixer選項
           // 使用postcss的autoprefixer功能
           autoprefixer: false
         },
@@ -93,5 +92,3 @@ module.exports = {
     ]
   }
 }
-
-console.log(process.env.NODE_ENV)

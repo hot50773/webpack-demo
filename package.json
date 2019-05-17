@@ -6,7 +6,7 @@
     "start:dev": "webpack --config webpack.dev.js --mode development --progress && node app.js",
     "start:prod": "webpack --config webpack.dev.js --mode production --progress && node app.js",
     "build:dev": "webpack --config webpack.dev.js --mode development",
-    "build": "webpack --config webpack.prod.js --mode production"
+    "build:prod": "webpack --config webpack.prod.js --mode production"
   },
   "keywords": [],
   "author": "",
@@ -16,12 +16,9 @@
     "babel-loader": "7.1.4",
     "babel-preset-env": "1.7.0",
     "css-loader": "^0.28.11",
-    "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.6.0",
-    "style-loader": "0.21.0",
     "webpack": "4.14.0",
-    "webpack-cli": "3.0.8",
-    "webpack-dev-server": "^3.3.1"
+    "webpack-cli": "3.0.8"
   },
   "dependencies": {
     "autoprefixer": "^9.5.1",
@@ -36,6 +33,6 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.3"
   }
 }

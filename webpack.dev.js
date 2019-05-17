@@ -1,6 +1,5 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // TODO: url-loader
 module.exports = {
@@ -10,7 +9,7 @@ module.exports = {
   },
   // 專案打包後的輸出點，包含輸出檔案的檔案名稱與檔案路徑
   output: {
-    filename: '[name].js',
+    filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist')
   },
   // 設定 babel-loader
@@ -60,10 +59,9 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css'
-    }),
-    new HtmlWebpackPlugin({ template: 'index.html' })
+      filename: 'css/[name].css',
+      chunkFilename: 'css/[id].css'
+    })
   ],
   devtool: 'source-map',
   optimization: {
@@ -74,11 +72,5 @@ module.exports = {
       chunks: 'all',
       name: 'vendor'
     }
-  },
-  devServer: {
-    port: 8080,
-    contentBase: path.join(__dirname, 'src'), // 告訴devServer內容來源位置
-    publicPath: '/dist/',
-    historyApiFallback: { index: '/dist/index.html' }
   }
 }
