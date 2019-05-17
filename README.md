@@ -1,4 +1,4 @@
-# webpack4-demo
+# webpack4-demo (test)
 A demo project for Webpack 4
 
 clone the repository
@@ -12,7 +12,7 @@ install the dependencies
 $ npm install
 ```
 
-Launch the server for development, and visit localhost:8080
+Launch the server for development, and visit localhost:8080/dist/index.html
 ```
 $ npm run dev
 ```
