@@ -12,16 +12,12 @@ install the dependencies
 $ npm install
 ```
 
-Run the server for development, and visit localhost:8080
+Launch the server for development, and visit localhost:8080
 ```
 $ npm run dev
 ```
-or you can also run the following command instead
-```
-$ npm run start
-```
 
-To run server for production, please use
+Launch server for production
 ```
 $ npm run build
 ```
