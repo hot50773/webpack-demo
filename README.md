@@ -12,7 +12,7 @@ install the dependencies
 $ npm install
 ```
 
-Launch the server for development, and visit localhost:8080
+Launch the server for development, and visit localhost:8080/dist/index.html
 ```
 $ npm run dev
 ```
