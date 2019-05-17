@@ -1,23 +1,13 @@
 # webpack4-demo (test)
 A demo project for Webpack 4
 
-clone the repository
+# Install
+- clone the repository: `git clone https://github.com/hot50773/webpack-demo.git`
+- install the dependencies: `npm install`
 
-```
-$ git clone https://github.com/hot50773/webpack-demo.git
-```
+## Start
+- Launch the server for development: `npm run start:dev`
+- Rebuild: `npm run build:dev`
 
-install the dependencies
-```
-$ npm install
-```
-
-Launch the server for development, and visit localhost:8080/dist/index.html
-```
-$ npm run dev
-```
-
-Launch server for production
-```
-$ npm run build
-```
+## Production
+- For production, run `npm run start:prod`
