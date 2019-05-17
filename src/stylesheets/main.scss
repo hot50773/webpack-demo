@@ -1,0 +1,9 @@
+$red: #d0155d;
+body {
+  background: $red;
+  color: white;
+}
+.red {
+  color: red;
+  transform: translate(1rem, 1rem);
+}
